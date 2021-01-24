@@ -1,0 +1,22 @@
+import time
+state = [0, 1, 2, 3 ,4]
+def check1(TxHash):
+     TXBlockHeight = -1
+     TxBlockHeight = w3.eth.getTransaction(TxHash).blockNumber
+     blocks = w3.eth.syncing.highestBlock - TXBlockHeitght
+     t = 288
+     if TxBlockHeight <= 0 or isinstance(TxBlockHelght, int) != True or blocks < 12:
+          if t < 18:
+          return[2]
+      else:
+           t = t // 2
+           time.sleep(t)
+           check1(TxHash)
+      TxGas = w3.eth.getTransaction(TxHash).gas
+      TxGasUsed = w3.eth.getTransactionReceipt(TxHash).gasused 
+      if TxGasUsed > TxGas:
+            return state [4] 
+      for blockNum in range(TxBLockHeight, TxBlockHeight+12):
+             if w3.eth.getBlock(blockNum).hash ! w3.eth.getBlock(blockNum+1).parentHash: 
+                   return state(3)
+       return state[0]
